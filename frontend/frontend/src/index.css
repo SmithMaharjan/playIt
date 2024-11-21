@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+label span {
+    cursor: auto;
+    pointer-events: none;
+}
+input[type="password"]:focus ~ .input-text,
+input[type="email"]:focus ~ .input-text {
+    @apply text-blue-500 bg-white transform -translate-y-5 -translate-x-2;
+}
